@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,700");
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color: grey;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #fff;
+}
+
+.main-nav {
+  width: 570px;
+  margin: auto;
+  text-align: center;
+  list-style: none;
+
+  margin-bottom: 105px;
+}
+
+.main-menu {
+  padding: 0;
+}
+
+.main-menu-item {
+  display: inline-block;
+}
+
+.main-menu-link {
+  display: block;
+  width: 137px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  line-height: 1.7;
+}
+
+.main-menu-link:hover {
+  color: #4b0082;
+}
+
+.main-content {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.preview {
+  display: block;
+  text-align: center;
+}
+
+.preview-list {
+  display: block;
+  margin: auto;
+  padding: 0;
+}
+
+.preview-list-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 135px;
+  width: 420px;
+  list-style: none;
+  text-align: left;
+}
+
+.preview-list li:nth-child(2n-1) {
+  margin-right: 60px;
+}
+
+.preview-gallary {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.preview-txt {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  color: #d2cec6;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 30px;
+  color: #626262;
+  line-height: 1.2;
+}
+
+.item-txt {
+  display: block;
+  color: #626262;
+  line-height: 1.714;
+}
+
+.main-footer {
+  text-align: center;
+}
+
+.main-footer-button {
+  width: 160px;
+  height: 60px;
+  font-size: 20px;
+  background-color: #fff;
+  border: solid 1px black;
+}
