@@ -105,8 +105,8 @@ body {
   margin-right: 0;
 }
 
-.item-products:nth-child(n+4) {
-  margin-bottom: 0;
+.item-products:nth-child(n+5) {
+  margin-bottom: 0px;
 }
 
 .link-poducts {
@@ -164,23 +164,15 @@ body {
   margin-top: 104px;
 }
 
-.latest-news-title {  
-  font-size: 48px;
-  font-family: "Roboto";
-  color: rgb(85, 82, 82);
-  text-transform: uppercase;
-  line-height: 58px;
-  text-align: center;
-}
 
-.latest-news-title::after {
+
+/*.latest-news-title::after {
   display: block;
   content: "";
   background-color: #1abc9c;
   width: 164px;
   height: 7px;
-  margin: 32px auto 80px;
-}
+}*/
 
 
 .list-news {
