@@ -123,6 +123,11 @@ body {
   font-size: 42px;
 }
 
+.next:hover,
+.prev:hover {
+  background-color: rgb(78, 198, 171);
+}
+
 .next {
   top: 0;
   right: 0;
