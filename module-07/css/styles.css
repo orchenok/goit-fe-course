@@ -212,14 +212,14 @@ form {
   outline: 0;
 }
 
-.form-item input[name="user_ename"]:valid,
+.form-item input[name="user_name"]:valid,
 .form-item input[type="email"]:valid,
 .form-item textarea:valid {
   border: 2px solid green;  
   border-radius: 2px;
 }
 
-.form-item input[name="user_ename"]:invalid,
+.form-item input[name="user_name"]:invalid,
 .form-item input[type="email"]:invalid,
 .form-item textarea:invalid {
   border: 2px solid red;  
