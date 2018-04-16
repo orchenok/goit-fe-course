@@ -66,7 +66,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
     padding: 0;
   }
 
@@ -82,17 +81,17 @@
     order: 2;
   }
 
-  .partner-item {
-    margin-bottom: 0;
+  .partner-item:nth-child(odd) {
+    margin-bottom: 40px;
   }
 
-  .partner-item:nth-child(1) {
+  .partner-item:nth-child(even) {
     margin-bottom: 60px;
   }
 
-  .partner-item:nth-child(2) {
+ /* .partner-item:nth-child(2) {
     margin-bottom: 40px;
-  }
+  }*/
 
   .partner-info {
     margin-bottom: 0;
@@ -100,9 +99,7 @@
 
   .other-partners {
     width: 197px;
-  }
-
-
+  }  
 }
 
 @media screen and (min-width: 940px) {
@@ -114,4 +111,9 @@
     width: 940px;
     margin: 0 auto 70px;
   }
+
+  .partner-item {
+    margin-bottom: 60px;
+  }
+  
 }
