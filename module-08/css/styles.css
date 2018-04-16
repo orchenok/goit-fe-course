@@ -7,10 +7,6 @@ body {
   line-height: 1.2;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .clearfix::after {
   display: table;
   content: "";
@@ -50,6 +46,7 @@ img {
 
 .page-nav {
   padding-top: 20px;
+  margin-bottom: 35px;
 }
 
 .page-button {
@@ -60,7 +57,7 @@ img {
   width: 94px;
   height: 40px;
   padding: 0px;
-  border: none;  
+  border: none;
 }
 
 .page-button:hover {
@@ -70,16 +67,15 @@ img {
   border-radius: 20px;
 }
 
-.page-button:nth-child(2) {  
+.btn-log {
   margin-bottom: 110px;
 }
 
-.header-title {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 35px;
+.logo {  
+  display: block;
+  width: 178px;
+  height: 20px;
+  margin: 0 auto;
 }
 
 .header-title-info {
@@ -94,7 +90,8 @@ img {
   font-size: 18px;
   font-family: "Roboto";
   font-weight: 300;
-  margin-top: 0;
+  margin-top: 0;  
+  padding: 0 50px;
 }
 
 .section-button {
@@ -108,18 +105,18 @@ img {
   font-weight: bold;
 }
 
-.section-button:hover{  
+.section-button:hover {
   color: rgb(255, 78, 80);
   border-style: solid;
   border-width: 2px;
   border-color: rgb(255, 78, 80);
-  background-color: rgb(255, 255, 255);  
+  background-color: rgb(255, 255, 255);
 }
 /*
 transition: border 0.3s linear;*/
 
 .partner {
-  padding-bottom: 55px;
+  margin-bottom: 55px;
 }
 
 .title-main-content {
@@ -130,13 +127,12 @@ transition: border 0.3s linear;*/
   text-align: center;
 }
 
-
 .partner-list {
-  padding: 20px 30px;  
+  padding: 20px 30px;
   text-align: center;
 }
 
-.partner-item:not(:last-child) {  
+.partner-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -205,8 +201,8 @@ transition: border 0.3s linear;*/
   border-style: solid;
   border-width: 2px;
   border-color: rgb(255, 78, 80);
-  border-radius: 20px;  
-  background-color: rgb(255, 255, 255);  
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
   width: 284px;
   height: 44px;
   margin: 0 auto;
