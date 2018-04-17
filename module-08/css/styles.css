@@ -162,22 +162,22 @@ transition: border 0.3s linear;*/
 }
 
 .partner-1::after {
-  background-image: url(/img/Shape128.svg);
+  background-image: url(../img/Shape128.svg);
   background-color: rgb(255, 78, 80);
 }
 
 .partner-2::after {
-  background-image: url(/img/Shape153.svg);
+  background-image: url(../img/Shape153.svg);
   background-color: rgb(255, 165, 7);
 }
 
 .partner-3::after {
-  background-image: url(/img/Shape155.svg);
+  background-image: url(../img/Shape155.svg);
   background-color: rgb(28, 215, 173);
 }
 
 .partner-4::after {
-  background-image: url(/img/Shape170.svg);
+  background-image: url(../img/Shape170.svg);
   background-color: rgb(78, 115, 219);
 }
 
