@@ -89,7 +89,7 @@
     margin-bottom: 60px;
   }
 
-  /* .partner-item:nth-child(2) {
+ /* .partner-item:nth-child(2) {
     margin-bottom: 40px;
   }*/
 
@@ -99,12 +99,12 @@
 
   .other-partners {
     width: 197px;
-  }
+  }  
 }
 
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 960px) {
   .container {
-    width: 100%;
+    width: 940px;
   }
 
   .partner {
@@ -115,11 +115,5 @@
   .partner-item {
     margin-bottom: 60px;
   }
-}
-
-@media screen and (min-width: 940px) and (max-width: 960px) {
-  .container {
-    width: 940px;
-  }
-
+  
 }
