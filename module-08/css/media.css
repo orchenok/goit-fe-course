@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 768px) {
   .container {
     width: 680px;
@@ -104,11 +105,11 @@
 
 @media screen and (min-width: 940px) {
   .container {
-    width: 100%;
+    width: 940px;
   }
 
   .partner {
-    width: 940px;
+    width: 920px;
     margin: 0 auto 70px;
   }
 
@@ -119,7 +120,7 @@
 
 @media screen and (min-width: 940px) and (max-width: 960px) {
   .container {
-    width: 940px;
+    width: 100%;
   }
 
 }

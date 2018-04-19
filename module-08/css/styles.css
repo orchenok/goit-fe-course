@@ -32,6 +32,12 @@ img {
   height: auto;
 }
 
+.page-nav,
+.header-info,
+.main-content {  
+  width: 277px;
+}
+
 .page-header {
   background-image: url(https://lh3.googleusercontent.com/GMJpBYVqff8Rf4VjmZVDHq-h3mhxRP3yiim27aLApvU1-NOTJ4R7cMvg2w_H2tLOtqeq6ebUJxPJXINLoJVoM9HXK5X6RONcDOC3xFJVgmOo1gM5doJyj5EmrFdpQRra_XdfTedKiIbTiCmPqxPdXv9oZyat3vGmuX8Dn7unRKyw6g3rPtp2Rdl0TJP7XXtGkoYSyqSCipv4nczbuJSyORZSnFIUFKgfRetQ3Q0P65pUP2rNHhdbnaL23Bnsnqe-dV4kDs8MzXRSMbXLSHW478tLNtlatyPOS18jFX7J8MRDaGXhztpkG4Azmxzv9stm7s5LQoI5KNYjpa_QBdHygmQZFlsjcZNqsnU53ris_l_zCLt8Zf-EvdLV6CNx2f9yEvH5Jr7s2ipAQ7nuhKP-aihe5JdiqFKQo0hhJPyUQs_Z8a0MLwuozhk0YOXlcBf6pyJtRpc79FajirDd4vvEi4W3WnuSE5IpL8w3XUhN2JmgBM0Fsu_ErIZhx3wsBZW8fB4zFQi2EoAtXrbj86ppWv4Z2RIpQVLEVsz4WGBRAeZZGTbpsZoud2p_Y4wEe5cEdmuW3H25a7O_pVDvAMCpK0uVlMvd4Ak4XeIbtX4=w712-h346-no);
   background-color: rgb(26, 25, 21);
@@ -44,7 +50,7 @@ img {
   margin-bottom: 70px;
 }
 
-.page-nav {
+.page-nav {  
   padding-top: 20px;
   margin-bottom: 35px;
 }
