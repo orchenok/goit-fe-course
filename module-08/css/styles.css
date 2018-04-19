@@ -35,7 +35,7 @@ img {
 .page-nav,
 .header-info,
 .main-content {  
-  width: 277px;
+  width: 300px;
 }
 
 .page-header {
@@ -71,6 +71,7 @@ img {
   border-width: 2px;
   border-color: rgb(255, 255, 255);
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .btn-log {
@@ -117,6 +118,7 @@ img {
   border-width: 2px;
   border-color: rgb(255, 78, 80);
   background-color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 /*
 transition: border 0.3s linear;*/
@@ -219,6 +221,7 @@ transition: border 0.3s linear;*/
   border: none;
   background-color: rgb(255, 78, 80);
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .visually-hidden:not(:focus):not(:active),
