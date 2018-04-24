@@ -1,8 +1,7 @@
-
+/*
 @media screen and (min-width: 768px) {
   .container {
     width: 680px;
-    /*padding: 0 35px;*/
   }
 
   .page-header {
@@ -29,7 +28,7 @@
   .page-button {
     height: 35px;
   }
-
+*/
   /*
     .header-info {
         width: 680px;
@@ -38,7 +37,7 @@
         box-sizing: border-box;
     }
     */
-
+/*
   .header-title-info {
     font-size: 52px;
     width: 620px;
@@ -89,11 +88,8 @@
   .partner-item:nth-child(even) {
     margin-bottom: 60px;
   }
-
-  /* .partner-item:nth-child(2) {
-    margin-bottom: 40px;
-  }*/
-
+*/
+/*
   .partner-info {
     margin-bottom: 0;
   }
@@ -123,4 +119,4 @@
     width: 100%;
   }
 
-}
+}*/

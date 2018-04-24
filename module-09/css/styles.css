@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900");
 
-
 html {
   box-sizing: border-box;
 }
@@ -22,6 +21,11 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-header {
@@ -55,9 +59,7 @@ ul {
   cursor: pointer;
 }
 
-.btn-log {
-  margin-bottom: 110px;
-}
+.btn-log {margin-bottom: 110px;}
 
 .logo {
   display: block;
@@ -102,9 +104,7 @@ ul {
   cursor: pointer;
 }
 
-.main-content {
-  padding-top: 70px;
-}
+.main-content {padding-top: 70px;}
 
 .title-main-content {
   font-size: 22px;
@@ -214,21 +214,34 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+@media screen and (min-width: 320px) and (max-width: 340px) {
+  .wrapper {max-width: 100%;}
+}
+
 @media (min-width: 320px) {
   .page-header .row > [class*="col-"] {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
 }
 
+@media screen  and (min-width: 768px) and (max-width: 788px) {
+ .wrapper {max-width: 100%;}
+}
+
 @media screen and (min-width: 768px) {
+  .wrapper {width: 768px;}
+
   .page-header {
     padding-top: 40px;
     min-height: 700px;
   }
 
-  .logo {
-    margin: 7px 0 0 0;
+  .logo {margin: 7px 0 0 0;}
+
+  .page-header .row > [class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .header-title-info {
@@ -241,11 +254,14 @@ input[type="radio"].visually-hidden {
     margin-bottom: 40px;
   }
 
-  .section-button {
-    width: 226px;
-  }
+  .section-button {width: 226px;}
 
-  .title-main-content {
-    margin-bottom: 38px;
+  .title-main-content {margin-bottom: 38px;}
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    width: 940px;
+    margin: 0 auto;
   }
 }
