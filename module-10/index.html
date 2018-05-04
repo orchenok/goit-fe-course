@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BEM</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="page-header">
+        <nav class="page-nav container">
+            <a href="#" class="site-logo">
+                <img src="https://lh3.googleusercontent.com/yINs2qlcp85iN1iO5AYtsKk9uGUihDZWhXr9pqAWmt7ZPnaxAePV7mMBPpDkG94l8uZmWQVrhWDmoBZECBwp_03dWf7mSTaApGh08xt4YvEhCC-oXQoajYBEnvBl-O8CoF_geFcKp_497cLNcMY6LSpp5hbl3N4CtIngSrOsKEFw2ZdIsi8xdbThu_7kDi-ZHF1f3-DWQgdeFx-8NPqRR6HPNMn769Fgq1DukPe4FcvGMOloOGXQzukTroQC_mvxsvRwc-RUKmJCoFfLX7fITTkdKY_5h_fg64neaUaIl7DT-bdsbdNhPK_DeHlVVw2DMGlHXzVcl0lXw1ACOnq-779F7c9fWBEkC29POt9MC6af6ZjaB2N6Z72tARggpL9PF_3p-K62-P1uD5x8D3p6FvC4Bw2vbS1bcy_S4wfsXlhRSkrb18KIWwlxOZDeYBlHARlIc_StUp7qE7ptWiqpVhN1-af1E-kS-XbpBJJfQUdABjbboXUfxtFZV5_qU3pKaw_9emFsBCQBtOP9Jrdqjs6eFUja87Fn5h2n176W-HjHtY0pxALMvPVwQv03ogUP8CiUhryDW2EjV2UyBkqy2gHtlIY4PX0LNdFK34DDgPN69KurvVV0WtGqYQ_J4vAnFeRgXJLZWAKe0sYC-KYqmwuBAeYri46N=w86-h23-no"
+                    alt="logo" class="site-logo__img" width="85" height="22">
+            </a>
+            <ul class="list site-navigation">
+                <li class="site-navigation__item">
+                    <a class="link site-navigation__link" href="#">about</a>
+                </li>
+                <li class="site-navigation__item">
+                    <a href="#" class="link site-navigation__link">service</a>
+                </li>
+                <li class="site-navigation__item">
+                    <a class="link site-navigation__link" href="#">work</a>
+                </li>
+                <li class="site-navigation__item">
+                    <a class="link site-navigation__link" href="#">blog</a>
+                </li>
+                <li class="site-navigation__item">
+                    <a class="link site-navigation__link" href="#">contact</a>
+                </li>
+                <!--
+                <li class="site-navigation__item">
+                    <a class="link site-navigation__link" href="#">
+                        <svg width="16px" height="16px" class="site-navigation__icon">
+                            <use href="img/sprite.svg#icon-cart"></use>
+                          </svg>
+                    </a>
+                </li>
+                <li class="site-navigation__item">
+                    <a class="link site-navigation__link" href="#">
+                        <svg width="16px" height="16px" class="site-navigation__icon">
+                            <use href="img/sprite.svg#icon-cart"></use>
+                          </svg>
+                    </a>
+                </li>
+                -->
+            </ul>
+        </nav>
+        <section class="header-info container">
+            <h1 class="visually-hidden">Header-info</h1>
+            <h1 class="header-info__title">Creative Template</h1>
+            <p class="header-info__text">Welcome to mogo</p>
+            <a class="link header-info__link" href="#">learn more</a>
+        </section>
+    </header>
+
+    <!--MAIN-->
+
+
+    <main class="content container">
+        <h1 class="visually-hidden">Team</h1>
+        <!--Service-section-->
+        <section class="section services">
+            <p class="section__txt">We work with</p>
+            <h2 class="section__title">Amazing Services</h2>
+            <ul class="section__list list">
+                <li class="services-item services-item--alarm">
+                    <h6 class="services-item__title">photography</h6>
+                    <p class="services-item__txt">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm</p>
+                </li>
+                <li class="services-item services-item--book">
+                    <h6 class="services-item__title">Web design</h6>
+                    <p class="services-item__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </li>
+                <li class="services-item services-item--computer">
+                    <h6 class="services-item__title">creativity</h6>
+                    <p class="services-item__txt">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem</p>
+                </li>
+                <li class="services-item services-item--home">
+                    <h6 class="services-item__title">seo</h6>
+                    <p class="services-item__txt">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm</p>
+                </li>
+                <li class="services-item services-item--image">
+                    <h6 class="services-item__title">css/html</h6>
+                    <p class="services-item__txt">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempo</p>
+                </li>
+                <li class="services-item services-item--line">
+                    <h6 class="services-item__title">digital</h6>
+                    <p class="services-item__txt">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="team">
+            <p class="team__txt section__txt">Who we are</p>
+            <h2 class="team__title section__title">Meet our team</h2>
+            <p class="team__descript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iusto expedita? Saepe beatae illo voluptatum
+                blanditiis quia consequuntur numquam fugiat provident adipisci accusamus, doloribus odio a exercitationem
+                corporis deserunt ullam quo quod cum officia aliquid! Accusamus, deleniti?</p>
+            <ul class="team__list list command">
+                <li class="command-item">
+                    <img src="https://lh3.googleusercontent.com/Z00hLl1K_2q8nVGClh3cKzV7YdALdGrUmzGPl5_YeB4wWnsrlaYYlrvS8eDfUbER9u5Dz6-QjqvG7T-JS4i8eFiEzk9hnPGrRXyGudjMlkhCS9JNB8hJnp_fOnyAd2tpDH-22a-Ul6tvzIxbIhlN1-oE3J46_4lpesGQexOMntFF1ZTGbdJW4xHHdXvmb4YHZJpZoSUtV5DxKzk_RFlp4M5eK8BSN2rFBMcXU98n38RvqWnYMSDBXALSHX-pv7uYlmbYsdUkJW9ATjDushNjnzTZtK4KmC0lb9bbK30lHeIgVsUp8Sltqmn_gkTSPShIuggHEJd9QV0o_3fuqSM8yM3wKaQR70firz_O3PbU0xMgeTBh_JN5qm-XIM93apTfAtD7WIOaI3qbz3yaBO-9FYSv9iaHRdFlY1N-5faqnP_kbAcDo1-NPmNfiPvtN9vfl0XyNBxPOC976-Q7auyBrCCuppQXfTBRuZXxaDbMFpkWav73hdgAuWGyDMq73hy3pUQ44h-7Qs7zXXUIsHtircPFce_0M_8-k_NA3jCtXNo3Wr4uF2sqOl-habuTny35Lm1IKKjFQcPBvfQyk9uR-9VYyTLgVoJiyugldg=w380-h470-no"
+                        alt="our team" class="command-item__img" width="380" height="475">
+                    <ul class="list command-item__list socials">
+                        <li class="socials-item">
+                            <button class="socials__link socials__link--facebook"></button>
+                        </li>
+                        <li class="socials-item">
+                            <button class="socials__link socials__link--twitter"></button>
+                        </li>
+                        <li class="socials-item">
+                            <button class="socials__link socials__link--pinterest"></button>
+                        </li>
+                        <li class="socials-item">
+                            <button class="socials__link socials__link--instagram"></button>
+                        </li>
+                    </ul>
+                    <h5 class="command__title">Matthew Dix</h5>
+                    <p class="command__text">Graphic Design</p>
+                </li>
+                <li class="command-item">
+                    <img src="https://lh3.googleusercontent.com/JupVsYMeLKuDDS0-3o39L8Ge7nuMBLFvOg3GSzOJQlVbgj15XO1JsHX-f2e3D3lfGPX53IHSK1kT3HdfeEDBBjQr8jjiyTzQzknLvDKBQ2JC7e99COZw1sH5mWGdIcpSDxd0fEWwDp0W532MGUtDjT5Swsd0E_nAUCTqWBxxrfcKQ7Ig12NGSv-92lpufHIEhvH2FqVuh4GIYeUsUVGAw04926O9J-E3e4WwJLtrZ50UQwF8gImZR0dDBmavIMEBeCFZwo_egbK2dPREsHkZgq2TyBPXQiJooyWkUkGRnx2rFdDzzkj4A11LQpI36lUCvSsIxDqRAq5OlkgUqripwZkyMFdsuYr2T6_9rMWwNdizEpcyBONQmz9sK_ZsKpVYBxPvNd1iJUdsQkvdV8zXL7hhrv3I1G5qhpFRHHaMdfO9x-DU1_S2mgLZwPm8sLN6qoDnHdz-dAvGjvCUo8AFfd-bM0W9vRfp2qOH6AlPTq0YNBw5hIiNgn9JYDeA1JfPEBQn7OT-ghbh2COlLK6mYe-bVIDJi1t23XBI-cM4FOYbtP8mQhw8_g8wpDc6nYOBpyn7ejd5vuJFMFQ5taew4d6kE9D2PjVrlIMsyA=w380-h470-no"
+                        alt="our team" class="command-item__img" width="380" height="475">
+                    <ul class="list command-item__list socials">
+                        <li class="socials-item">
+                            <button class="socials__link socials__link--facebook"></button>
+                        </li>
+                        <li class="socials-item">
+                            <button class="socials__link socials__link--twitter"></button>
+                        </li>
+                        <li class="socials-item">
+                            <button class="socials__link socials__link--pinterest"></button>
+                        </li>
+                        <li class="socials-item">
+                            <button class="socials__link socials__link--instagram"></button>
+                        </li>
+                    </ul>
+                    <h5 class="command__title">Christopher Campbell</h5>
+                    <p class="command__text">Branding/UX design</p>
+                </li>
+                <li class="command-item">
+                    <img src="https://lh3.googleusercontent.com/3OVkDg9wDEadWNcuSWqCcdlQQmDPVzueIWQfnuOcQuQhyYlwECB5Y2Foc8yr2scy4kxz7vQnUvcfwZbddNaZgSdLFidEEBGDuGqQEJuWmeE-jxxJNHZz_0RuLoqKdivdDhSj5p2t2C1yM63UcCUisS8qtPLVepekTQCkEJNTcuLGWHezN8oT-WwZVWqsNQqWhBgTP6l67bmx2gGiOWbEs1UzDJEkGC22dWLXV8_Y1loMD6XJXSNuMRo2IG2kYBNmocuGENndNq2B0lK45C3hGc7BBR54gxR4ZjnOpP-l4N4qbol2SMWWItMkkYEMzOUbzVmQMbrg4RD22ImBJw98lJugSNbZ1Kou5hxIVEmF5-ZHgfGaZXGAIEA46ClCYd_pUE9x6MIEMNQ7l4LPwC1W9t5-qzVF4Fj0NgpsYXavtZrt9SSkJ5M41VCgclbKM3F7dvfZN68rOW-Oy3WjsBdCjS9O65xuyR0AI8rL7DEPDIVwjsoRzCgYA8GeCE-gk6U8ICZZsS8iVzsi5esiy_YDIs0h2ej8viPXvAEm1MI9J0qO4NvS1gt522JXZI6_xMZswmkST668uGdUt5nghygZIZ0FbnWqoedhMRJg8w=w380-h470-no"
+                        alt="our team" class="command-item__img" width="380" height="475">
+                    <ul class="list command-item__list socials">
+                        <li class="socials-item">
+                            <button class="socials__link socials__link--facebook"></button>
+                        </li>
+                        <li class="socials-item">
+                            <button class="socials__link socials__link--twitter"></button>
+                        </li>
+                        <li class="socials-item">
+                            <button class="socials__link socials__link--pinterest"></button>
+                        </li>
+                        <li class="socials-item">
+                            <button class="socials__link socials__link--instagram"></button>
+                        </li>
+                    </ul>
+                    <h5 class="command__title">Michael Fertig </h5>
+                    <p class="command__text">Developer</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    
+    <footer class="page-footer container">
+        <p class="page-footer__text footer-txt">© 2016 MoGo free PSD template by
+            <a class="footer-txt__link link" href="#">Laaqiq</a>
+        </p>
+        <form action="#" method="get" class="page-footer__form form-footer">
+            <input type="email" name="email" placeholder="Your Email..." class="form-footer__email">
+            <button type="submit" class="form-footer__btn">subscribe</button>
+        </form>
+    </footer>
+
+
+</body>
+
+</html>
