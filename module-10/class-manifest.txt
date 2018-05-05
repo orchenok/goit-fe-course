@@ -1,12 +1,12 @@
+body
 link
 list
+container
+container-flex
 
 page-header 
 
 page-nav
- 
-container
-
 site-logo
 	site-logo__img
 
@@ -17,8 +17,8 @@ site-navigation
 header-info
 	header-info__title
 	header-info__text
+   	header-info__link
 
-header-btn
 
 section
 	section__title
