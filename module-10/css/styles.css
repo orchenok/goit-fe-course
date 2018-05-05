@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+
 body {
   font-family: "Open Sans", serif;
   line-height: 1.2;
@@ -201,27 +203,27 @@ body {
 }
 
 .services-item--alarm::before {
-  background-image: url(/img/icons/ALARM.svg);
+  background-image: url(img/icons/ALARM.svg);
 }
 
 .services-item--book::before {
-  background-image: url(/img/icons/BOOK.svg);
+  background-image: url(img/icons/BOOK.svg);
 }
 
 .services-item--computer::before {
-  background-image: url(/img/icons/COMPUTER.svg);
+  background-image: url(img/icons/COMPUTER.svg);
 }
 
 .services-item--home::before {
-  background-image: url(/img/icons/HOME.svg);
+  background-image: url(img/icons/HOME.svg);
 }
 
 .services-item--image::before {
-  background-image: url(/img/icons/IMAGE.svg);
+  background-image: url(img/icons/IMAGE.svg);
 }
 
 .services-item--line::before {
-  background-image: url(/img/icons/LINE.svg)
+  background-image: url(img/icons/LINE.svg)
 }
 
 .services-item__title {
