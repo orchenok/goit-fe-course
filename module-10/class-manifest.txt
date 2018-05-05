@@ -1,0 +1,59 @@
+link
+list
+
+page-header 
+
+page-nav
+ 
+container
+
+site-logo
+	site-logo__img
+
+site-navigation
+	site-navigetion__item
+	site-navigation__link
+
+header-info
+	header-info__title
+	header-info__text
+
+header-btn
+
+section
+	section__title
+	section__text
+	section__list
+
+services
+	services__item
+	services__item-icon
+	services__item-title
+	services__item-txt
+	
+team
+	team__title
+	team__text
+	team__list
+
+command
+	command__item
+	command__img
+	command__overlay (socials)
+	command__title
+	command__text
+
+
+socials
+	socials__item
+	socials__link
+	socials__icon
+
+
+page-footer
+	page-footer__title
+	page-footer__form
+
+action
+	action__email
+	action__submit

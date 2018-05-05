@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
-
+/*GLOBAL*/
 
 body {
   font-family: "Open Sans", serif;
@@ -20,6 +20,12 @@ body {
   margin: 0 auto;
 }
 
+.container-flex {  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -30,9 +36,28 @@ body {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*Header*/
 
 .page-header {
+  background-image: -webkit-gradient( linear, left top, left bottom, from(0), color-stop(0%, rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(../img/Layer.png);
+  background-image: -webkit-linear-gradient( 0, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/Layer.png);
+  background-image: -o-linear-gradient( 0, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/Layer.png);
   background-image: linear-gradient( 0, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/Layer.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,8 +70,11 @@ body {
 }
 
 .page-nav {
-  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   /*min-height: 90px;*/
   margin-bottom: 170px;
@@ -58,7 +86,8 @@ body {
 }
 
 .site-navigation {
-  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 620px;
 }
@@ -69,6 +98,8 @@ body {
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
   text-transform: uppercase;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
   fill: #fff;
 }
@@ -76,6 +107,8 @@ body {
 .site-navigation__link:hover {
   fill: rgb(252, 227, 138);
   color: rgb(252, 227, 138);
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
 
@@ -86,11 +119,15 @@ body {
   width: 100%;
   height: 3px;
   background-color: transparent;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
 }
 
 .site-navigation__item:not(:nth-last-child(-n+2))>.site-navigation__link:hover::after {
   background-color: rgb(252, 227, 138);
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
 }
 
@@ -123,6 +160,7 @@ body {
 
 .header-info__link {
   display: block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-style: solid;
   border-width: 3px;
@@ -147,6 +185,7 @@ body {
 }
 
 /*MAIN*/
+/*Service-section*/
 
 .section__txt {
   margin: 0;
@@ -177,8 +216,10 @@ body {
 }
 
 .section__list {
-  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -186,6 +227,7 @@ body {
   position: relative;
   width: 365px;
   padding-left: 92px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 100px;
 }
@@ -259,7 +301,8 @@ body {
 }
 
 .team__list {
-  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -272,47 +315,79 @@ body {
 .command-item__img {
   float: left;
   margin-bottom: 30px;
+  -webkit-transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -o-transition: transform 0.2s linear, box-shadow 0.2s linear;
   transition: transform 0.2s linear, box-shadow 0.2s linear;
+  transition: transform 0.2s linear, box-shadow 0.2s linear, -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
 
 .command-item:hover .command-item__img {
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
+  -webkit-box-shadow: rgb(149, 225, 211) 10px 10px;
   box-shadow: rgb(149, 225, 211) 10px 10px;
-  transition: box-shadow 0.2s linear, transform 0.2s linear
+  -webkit-transition: -webkit-box-shadow 0.2s linear, -webkit-transform 0.2s linear;
+  transition: -webkit-box-shadow 0.2s linear, -webkit-transform 0.2s linear;
+  -o-transition: box-shadow 0.2s linear, transform 0.2s linear;
+  transition: box-shadow 0.2s linear, transform 0.2s linear;
+  transition: box-shadow 0.2s linear, transform 0.2s linear, -webkit-box-shadow 0.2s linear, -webkit-transform 0.2s linear
 }
 
 .socials {
-  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   position: absolute;
   width: 380px;
   height: 475px;
+  background: -webkit-gradient( linear, left bottom, left top, from(rgba(251, 227, 137, 0.9)), to(rgba(243, 129, 129, 0.9)));
+  background: -webkit-linear-gradient( bottom, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9));
+  background: -o-linear-gradient( bottom, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9));
   background: linear-gradient( to top, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9));
   opacity: 0;
+  -webkit-transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
+  transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear, opacity 0.2s linear;
   transition: transform 0.2s linear, opacity 0.2s linear;
+  transition: transform 0.2s linear, opacity 0.2s linear, -webkit-transform 0.2s linear;
 }
 
 .command-item:hover .socials {
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
   opacity: 1;
+  -webkit-transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
+  transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
+  -o-transition: opacity 0.2s linear, transform 0.2s linear;
   transition: opacity 0.2s linear, transform 0.2s linear;
+  transition: opacity 0.2s linear, transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
-.socials button {
+.socials__link {
   display: block;
   width: 56px;
   height: 56px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgb(252, 227, 138);
   border: 1px solid #f38181;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
 }
 
 .socials .socials__link:hover {
   background-color: #f38181;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
   cursor: pointer;
 }
@@ -344,10 +419,16 @@ body {
   text-align: center;
 }
 
+/*FOOTER*/
+
 .page-footer {
-  display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   min-height: 80px;
   border-top: 1px solid rgb(229, 229, 229);
@@ -365,13 +446,12 @@ body {
   color: rgb(243, 129, 129);
 }
 
-.page-footer__form {
-  display: flex;
-}
+/*FORM*/
 
 .form-footer__email {
   width: 230px;
   height: 40px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 14px;
   font-size: 15px;
@@ -397,17 +477,6 @@ body {
   cursor: pointer;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.form-footer__btn:hover {
+  opacity: 0.7;
 }
