@@ -33,7 +33,7 @@ body {
 /*Header*/
 
 .page-header {
-  background-image: linear-gradient( 0, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(/img/Layer.png);
+  background-image: linear-gradient( 0, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/Layer.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -203,27 +203,27 @@ body {
 }
 
 .services-item--alarm::before {
-  background-image: url(img/icons/ALARM.svg);
+  background-image: url(../img/icons/ALARM.svg);
 }
 
 .services-item--book::before {
-  background-image: url(img/icons/BOOK.svg);
+  background-image: url(../img/icons/BOOK.svg);
 }
 
 .services-item--computer::before {
-  background-image: url(img/icons/COMPUTER.svg);
+  background-image: url(../img/icons/COMPUTER.svg);
 }
 
 .services-item--home::before {
-  background-image: url(img/icons/HOME.svg);
+  background-image: url(../img/icons/HOME.svg);
 }
 
 .services-item--image::before {
-  background-image: url(img/icons/IMAGE.svg);
+  background-image: url(../img/icons/IMAGE.svg);
 }
 
 .services-item--line::before {
-  background-image: url(img/icons/LINE.svg)
+  background-image: url(../img/icons/LINE.svg)
 }
 
 .services-item__title {
