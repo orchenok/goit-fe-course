@@ -36,7 +36,7 @@
 }
 
 .socials {
-  @extend %list;
+  @extend %list; 
   align-items: center;
   justify-content: center;
   position: absolute;
