@@ -2,26 +2,17 @@
    Import partials below
 */
 @import "helpers/variables";
-@import "helpers/mixins";
-@import "helpers/extras";
 @import "helpers/placeholders";
+@import 'helpers/mixins';
+@import 'helpers/extras';
 @import "normalize";
 @import "base";
 
 
-/*Components*/
-@import "components/list";
 @import "components/container";
 @import "components/container-flex";
-@import "components/page-header";
-@import "components/page-nav";
-@import "components/site-logo";
-@import "components/site-navigation";
-@import "components/header-info";
-@import "components/section";
-@import "components/service-item";
+@import "components/logo";
+@import "components/header";
+@import "components/service";
 @import "components/team";
-@import "components/command";
-@import "components/socials";
-@import "components/footer";
-@import "components/form";
+@import "components/footer"; 

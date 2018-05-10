@@ -2,6 +2,39 @@
    Import partials below
 */
 
+.site-navigation,
+.section__list,
+.team__list,
+.socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation__link,
+.header-info__link,
+.footer-txt__link {
+  text-decoration: none;
+}
+
+/* visually-hidden helper */
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -386,34 +419,6 @@ body {
   clear: both;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/*Components*/
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.link {
-  text-decoration: none;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -421,6 +426,11 @@ input[type="radio"].visually-hidden {
 
 .container-flex {
   display: flex;
+}
+
+.site-logo {
+  display: inline-block;
+  font-size: 0;
 }
 
 .page-header {
@@ -436,14 +446,10 @@ input[type="radio"].visually-hidden {
 }
 
 .page-nav {
-  justify-content: space-between;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 170px;
-}
-
-.site-logo {
-  display: inline-block;
-  font-size: 0;
 }
 
 .site-navigation {
@@ -480,6 +486,10 @@ input[type="radio"].visually-hidden {
 .site-navigation__item:not(:nth-last-child(-n+2)) > .site-navigation__link:hover::after {
   background-color: #fce38a;
   transition: background-color 0.2s linear;
+}
+
+.site-navigation__item:hover + .site-navigation__item {
+  font-weight: bold;
 }
 
 .header-info__title {
@@ -558,7 +568,6 @@ input[type="radio"].visually-hidden {
 }
 
 .section__list {
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -568,18 +577,6 @@ input[type="radio"].visually-hidden {
   padding-left: 92px;
   box-sizing: border-box;
   margin-bottom: 100px;
-}
-
-.services-item::before {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 30px;
-  content: "";
-  width: 32px;
-  height: 32px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .services-item--alarm::before {
@@ -604,6 +601,18 @@ input[type="radio"].visually-hidden {
 
 .services-item--line::before {
   background-image: url(../img/icons/LINE.svg);
+}
+
+.services-item::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .services-item__title {
@@ -646,15 +655,6 @@ input[type="radio"].visually-hidden {
   font-size: 0;
 }
 
-.command-item:hover .socials {
-  -webkit-transform: translate(-10px, -10px);
-  transform: translate(-10px, -10px);
-  opacity: 1;
-  transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
-  transition: opacity 0.2s linear, transform 0.2s linear;
-  transition: opacity 0.2s linear, transform 0.2s linear, -webkit-transform 0.2s linear;
-}
-
 .command-item__img {
   float: left;
   margin-bottom: 30px;
@@ -670,6 +670,54 @@ input[type="radio"].visually-hidden {
   transition: box-shadow 0.2s linear, -webkit-transform 0.2s linear;
   transition: box-shadow 0.2s linear, transform 0.2s linear;
   transition: box-shadow 0.2s linear, transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.socials {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 380px;
+  height: 475px;
+  background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+  opacity: 0;
+  transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear, opacity 0.2s linear;
+  transition: transform 0.2s linear, opacity 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.command-item:hover .socials {
+  -webkit-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+  opacity: 1;
+  transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
+  transition: opacity 0.2s linear, transform 0.2s linear;
+  transition: opacity 0.2s linear, transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.socials__link {
+  display: block;
+  width: 56px;
+  height: 56px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fce38a;
+  border: 1px solid #f38181;
+  transition: background-color 0.2s linear;
+}
+
+.socials__link:hover .socials__icon {
+  fill: white;
+}
+
+.socials .socials__link:hover {
+  background-color: #f38181;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+
+.socials__icon {
+  fill: #f38181;
 }
 
 .command__title {
@@ -691,45 +739,6 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.socials {
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 380px;
-  height: 475px;
-  background: linear-gradient(to top, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9));
-  opacity: 0;
-  transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
-  transition: transform 0.2s linear, opacity 0.2s linear;
-  transition: transform 0.2s linear, opacity 0.2s linear, -webkit-transform 0.2s linear;
-}
-
-.socials__link {
-  display: block;
-  width: 56px;
-  height: 56px;
-  box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fce38a;
-  border: 1px solid #f38181;
-  transition: background-color 0.2s linear;
-}
-
-.socials .socials__link:hover {
-  background-color: #f38181;
-  transition: background-color 0.2s linear;
-  cursor: pointer;
-}
-
-.socials__icon {
-  fill: #f38181;
-}
-
-.socials__link:hover .socials__icon {
-  fill: white;
-}
-
 .page-footer {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -746,7 +755,6 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-txt__link {
-  text-decoration: none;
   color: #f38181;
 }
 
