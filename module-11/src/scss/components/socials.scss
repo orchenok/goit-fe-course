@@ -11,7 +11,7 @@
   background: -webkit-gradient( linear, left bottom, left top, from(rgba(251, 227, 137, 0.9)), to(rgba(243, 129, 129, 0.9)));
   background: -webkit-linear-gradient( bottom, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9));
   background: -o-linear-gradient( bottom, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9));
-  background: linear-gradient( to top, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9));
+  background: linear-gradient( to top, $header-bg);
   opacity: 0;
   -webkit-transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
   transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
@@ -33,6 +33,10 @@
   -webkit-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
+
+  &:hover .socials__icon {
+    fill: $secondary-color-txt;
+  }
 }
 
 .socials .socials__link:hover {
@@ -45,8 +49,4 @@
 
 .socials__icon {
   fill: $section-txt-after;
-}
-
-.socials__link:hover .socials__icon {
-  fill: $secondary-color-txt;
 }

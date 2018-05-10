@@ -25,8 +25,10 @@
   text-align: center;
   border: transparent;
   cursor: pointer;
+  
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
-.form-footer__btn:hover {
-  opacity: 0.7;
-}
+

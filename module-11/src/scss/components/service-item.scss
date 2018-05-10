@@ -17,35 +17,36 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-}
 
-.services-item--alarm::before {
-  background-image: url(../img/icons/ALARM.svg);
-}
+  &--alarm::before {
+    background-image: url(../img/icons/ALARM.svg);
+  }
 
-.services-item--book::before {
-  background-image: url(../img/icons/BOOK.svg);
-}
+  &--book::before {
+    background-image: url(../img/icons/BOOK.svg);
+  }
 
-.services-item--computer::before {
-  background-image: url(../img/icons/COMPUTER.svg);
-}
+  &--computer::before {
+    background-image: url(../img/icons/COMPUTER.svg);
+  }
 
-.services-item--home::before {
-  background-image: url(../img/icons/HOME.svg);
-}
+  &--home::before {
+    background-image: url(../img/icons/HOME.svg);
+  }
+  
+  &--image::before {
+    background-image: url(../img/icons/IMAGE.svg);
+  }
+  
+  &--line::before {
+    background-image: url(../img/icons/LINE.svg)
+  }
 
-.services-item--image::before {
-  background-image: url(../img/icons/IMAGE.svg);
-}
-
-.services-item--line::before {
-  background-image: url(../img/icons/LINE.svg)
 }
 
 .services-item__title {
   margin: 0 0 20px 0;
-  font-size: 14px;
+  font-size: $maim-txt-size;
   font-family: $main-font-txt;
   color: $section-txt;
   text-transform: uppercase;
