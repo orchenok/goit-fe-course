@@ -1,0 +1,60 @@
+.services-item {
+  position: relative;
+  width: 365px;
+  padding-left: 92px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.services-item--alarm::before {
+  background-image: url(../img/icons/ALARM.svg);
+}
+
+.services-item--book::before {
+  background-image: url(../img/icons/BOOK.svg);
+}
+
+.services-item--computer::before {
+  background-image: url(../img/icons/COMPUTER.svg);
+}
+
+.services-item--home::before {
+  background-image: url(../img/icons/HOME.svg);
+}
+
+.services-item--image::before {
+  background-image: url(../img/icons/IMAGE.svg);
+}
+
+.services-item--line::before {
+  background-image: url(../img/icons/LINE.svg)
+}
+
+.services-item__title {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  font-family: $main-font-txt;
+  color: $section-txt;
+  text-transform: uppercase;
+}
+
+.services-item__txt {
+  margin: 0;
+  font-size: 15px;
+  font-family: $main-font-txt-item;
+  color: $main-color-txt;
+  line-height: 24px;
+}

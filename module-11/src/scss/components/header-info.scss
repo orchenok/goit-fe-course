@@ -1,0 +1,48 @@
+.header-info__title {
+  font-size: 72px;
+  font-family: $main-font-txt-second;
+  color: $secondary-color-txt;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.header-info__text {
+  width: 822px;
+  font-size: 150px;
+  font-family: $main-font-txt;
+  color: $secondary-color-txt;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 120px;
+}
+
+.header-info__link {
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 3px;
+  border-color: $secondary-color-txt;
+  width: 164px;
+  height: 44px;
+  font-size: 14px;
+  font-family: $main-font-txt;
+  color: $secondary-color-txt;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 38px;
+  text-align: center;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: $btn-txt-hover;
+    border: none;
+    line-height: 44px;
+    ;
+  }
+}

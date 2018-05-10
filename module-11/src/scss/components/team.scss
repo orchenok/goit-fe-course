@@ -1,0 +1,19 @@
+.team {
+  margin-bottom: 80px;
+}
+
+.team__descript {
+  width: 940px;
+  margin: 0 auto 85px;
+  font-size: 15px;
+  font-family: $main-font-txt-item;
+  color: $main-color-txt;
+  line-height: 24px;
+  text-align: center;
+}
+
+.team__list {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}

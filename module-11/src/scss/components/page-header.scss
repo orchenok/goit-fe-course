@@ -1,0 +1,14 @@
+.page-header {
+  background-image: -webkit-gradient( linear, left top, left bottom, from(0), color-stop(0%, rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(../img/Layer.png);
+  background-image: -webkit-linear-gradient( 0, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/Layer.png);
+  background-image: -o-linear-gradient( 0, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/Layer.png);
+  background-image: $header-bgc, url(../img/Layer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+  text-align: center;
+  color: $secondary-color-txt;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}

@@ -1,0 +1,59 @@
+.command-item {
+  position: relative;
+  float: left;
+  font-size: 0;
+
+  &:hover .socials {
+    -webkit-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+    opacity: 1;
+    -webkit-transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
+    transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
+    -o-transition: opacity 0.2s linear, transform 0.2s linear;
+    transition: opacity 0.2s linear, transform 0.2s linear;
+    transition: opacity 0.2s linear, transform 0.2s linear, -webkit-transform 0.2s linear;
+  }
+}
+
+.command-item__img {
+  float: left;
+  margin-bottom: 30px;
+  -webkit-transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -o-transition: transform 0.2s linear, box-shadow 0.2s linear;
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
+  transition: transform 0.2s linear, box-shadow 0.2s linear, -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+}
+
+.command-item:hover .command-item__img {
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+  -webkit-box-shadow: rgb(149, 225, 211) 10px 10px;
+  box-shadow: rgb(149, 225, 211) 10px 10px;
+  -webkit-transition: -webkit-box-shadow 0.2s linear, -webkit-transform 0.2s linear;
+  transition: -webkit-box-shadow 0.2s linear, -webkit-transform 0.2s linear;
+  -o-transition: box-shadow 0.2s linear, transform 0.2s linear;
+  transition: box-shadow 0.2s linear, transform 0.2s linear;
+  transition: box-shadow 0.2s linear, transform 0.2s linear, -webkit-box-shadow 0.2s linear, -webkit-transform 0.2s linear
+}
+
+.command__title {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  font-family: $main-font-txt;
+  color: $section-txt;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.command__text {
+  margin: 0;
+  font-size: 15px;
+  font-family: $main-font-txt-item;
+  color: $main-color-txt;
+  font-style: italic;
+  line-height: 24px;
+  text-align: center;
+}

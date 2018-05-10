@@ -1,0 +1,52 @@
+.socials {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  width: 380px;
+  height: 475px;
+  background: -webkit-gradient( linear, left bottom, left top, from(rgba(251, 227, 137, 0.9)), to(rgba(243, 129, 129, 0.9)));
+  background: -webkit-linear-gradient( bottom, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9));
+  background: -o-linear-gradient( bottom, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9));
+  background: linear-gradient( to top, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9));
+  opacity: 0;
+  -webkit-transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
+  transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear, opacity 0.2s linear;
+  transition: transform 0.2s linear, opacity 0.2s linear;
+  transition: transform 0.2s linear, opacity 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.socials__link {
+  display: block;
+  width: 56px;
+  height: 56px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-txt-hover;
+  border: 1px solid $section-txt-after;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.socials .socials__link:hover {
+  background-color: $section-txt-after;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+
+.socials__icon {
+  fill: $section-txt-after;
+}
+
+.socials__link:hover .socials__icon {
+  fill: $secondary-color-txt;
+}

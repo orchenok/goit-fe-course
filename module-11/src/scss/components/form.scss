@@ -1,0 +1,32 @@
+.form-footer__email {
+  width: 230px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 14px;
+  font-size: 15px;
+  font-family: $main-font-txt-item;
+  font-style: italic;
+  line-height: 24px;
+  text-align: left;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.form-footer__btn {
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  font-family: $main-font-txt;
+  color: $secondary-color-txt;
+  background-color: $footer-bgc;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  border: transparent;
+  cursor: pointer;
+}
+
+.form-footer__btn:hover {
+  opacity: 0.7;
+}
