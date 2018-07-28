@@ -40,9 +40,10 @@ console.log(numbers);
   
 } while(userInput !== null);
 
-for (let i = 0; i < numbers.length; i += 1) {
-  total += numbers[i]; 
-}
+
+for (let value of numbers) {
+    total += value;
+  }
  //(total > 0) 
   alert(`Общая сумма чисел равна ${total}`);
 
