@@ -43,8 +43,8 @@ console.log(numbers);
 for (let i = 0; i < numbers.length; i += 1) {
   total += numbers[i]; 
 }
- if (total > 0) {
+ //(total > 0) 
   alert(`Общая сумма чисел равна ${total}`);
-}
+
 
 console.log(total);
